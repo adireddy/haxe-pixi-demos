@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"hx-pixi-basics.js",
+"sourceRoot":"file://",
+"sources":["/haxe/haxe-pixi-demos/src/pixihx/demos/basics/Main.hx"],
+"sourcesContent":["package pixihx.demos.basics;\n\nimport pixi.Pixi;\nimport pixi.display.Sprite;\nimport pixi.display.Stage;\nimport pixi.textures.Texture;\nimport pixi.utils.Detector;\nimport js.Browser;\n\nclass Main {\n\n\tprivate var _bunny:Sprite;\n    private var _renderer:Dynamic;\n    private var _stage:Stage;\n\n\tpublic function new() {\n\t\t_stage = new Stage(0x00FF00);\n        _renderer = Detector.autoDetectRenderer(800, 600);\n        Browser.document.body.appendChild(_renderer.view);\n        \n        var texture = Texture.fromImage(\"assets/basics/bunny.png\");\n        _bunny = new Sprite(texture);\n        _bunny.anchor.x = _bunny.anchor.y = 0.5;\n        _bunny.position.x = 400;\n        _bunny.position.y = 300;\n        _bunny.scale.x = _bunny.scale.y = 2;\n        \n        _stage.addChild(_bunny);\n        \n        Browser.window.requestAnimationFrame(cast animate);\n\t}\n\n\tprivate function animate():Void {\n        Browser.window.requestAnimationFrame(cast animate);\n        _bunny.rotation += 0.1;  \n        _renderer.render(_stage);\n    }\n\n\tprivate static function main() {\n\t\tnew Main();\n\t}\n}"],
+"names":[],
+"mappings":";;;;2BAeO,hBAAe;CACrB,EAAS,YAAU;CACb,EAAY,FAA4B,AAAK;CAC7C,AAAkC;CAEpB,AAAkB;CAChC,EAAS,aAAW;CACpB,EAAkB,AAAkB;CACpC,EAAoB;CACpB,EAAoB;CACpB,EAAiB,AAAiB;CAElC,AAAgB;CAEhB,AAAqC,AAAK;;gCASlC,rBACd;;;;SAPO,EAAwB;EACzB,DAAqC,AAAK;EAC1C,EAAmB;EACnB,DAAiB;;;;;;;;"
+}

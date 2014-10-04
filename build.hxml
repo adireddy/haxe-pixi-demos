@@ -9,7 +9,9 @@
 #-main pixihx.demos.snake.Main
 #-main pixihx.demos.rendertexture.Main
 #-main pixihx.demos.graphics.Main
--main pixihx.demos.spine.Main
+#-main pixihx.demos.spine.Main
+#-main pixihx.demos.pixidude.Main
+-main pixihx.demos.bitmaptext.Main
 
 #JavaScript target
 -js release/hx-pixi-demo.js
