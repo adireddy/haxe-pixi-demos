@@ -1,17 +1,17 @@
 #integrate files to classpath
--cp ../haxe-pixi/src
+-cp ../haxe-pixi
 -cp src
 
 #this class wil be used as entry point for your app.
 #-main pixihx.demos.basics.Main
-#-main pixihx.demos.spritesheet.Main
+-main pixihx.demos.spritesheet.Main
 #-main pixihx.demos.movieclip.Main
 #-main pixihx.demos.snake.Main
 #-main pixihx.demos.rendertexture.Main
 #-main pixihx.demos.graphics.Main
 #-main pixihx.demos.spine.Main
 #-main pixihx.demos.pixidude.Main
--main pixihx.demos.bitmaptext.Main
+#-main pixihx.demos.bitmaptext.Main
 
 #JavaScript target
 -js release/hx-pixi-demo.js
