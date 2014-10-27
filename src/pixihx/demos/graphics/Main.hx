@@ -1,5 +1,6 @@
 package pixihx.demos.graphics;
 
+import pixi.InteractionData;
 import pixi.renderers.webgl.WebGLRenderer;
 import pixi.display.Stage;
 import pixi.primitives.Graphics;
@@ -71,7 +72,7 @@ class Main {
 		Browser.window.requestAnimationFrame(cast animate);
 	}
 
-	function _onStageClick() {
+	function _onStageClick(data:InteractionData) {
 		_graphics.lineStyle(Math.random() * 30, Math.random() * 0xFFFFFF, 1);
 		_graphics.moveTo(Math.random() * 620, Math.random() * 380);
 		_graphics.lineTo(Math.random() * 620, Math.random() * 380);

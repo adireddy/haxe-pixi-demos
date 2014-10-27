@@ -1,5 +1,6 @@
 package pixihx.demos.spine;
 
+import pixi.InteractionData;
 import pixi.renderers.webgl.WebGLRenderer;
 import pixi.display.Stage;
 import pixi.spine.Spine;
@@ -48,7 +49,7 @@ class Main {
 		_stage.click = _stageOnClick;
 	}
 
-	function _stageOnClick() {
+	function _stageOnClick(data:InteractionData) {
 		_spineBoy.state.setAnimationByName("jump", false);
 		_spineBoy.state.addAnimationByName("walk", true);
 	}

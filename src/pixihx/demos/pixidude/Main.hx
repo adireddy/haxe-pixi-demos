@@ -1,5 +1,6 @@
 package pixihx.demos.pixidude;
 
+import pixi.InteractionData;
 import pixi.renderers.webgl.WebGLRenderer;
 import pixi.display.Sprite;
 import pixi.display.Stage;
@@ -74,7 +75,7 @@ class Main {
 		_stage.click = _stageOnClick;
 	}
 
-	function _stageOnClick() {
+	function _stageOnClick(data:InteractionData) {
 		_pixie.state.setAnimationByName("jump", false);
 		_pixie.state.addAnimationByName("running", true);
 	}
