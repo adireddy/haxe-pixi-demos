@@ -1,0 +1,33 @@
+{
+  "name": "hx-pixi-demos",
+  "version": "0.0.1",
+  "description": "pixi demos",
+  "main": "release/hx-pixi-demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adireddy/haxe-pixi-demos.git"
+  },
+  "keywords": [
+    "haxe",
+    "pixi-demos",
+    "pixi"
+  ],
+  "author": {
+    "name": "Adi Reddy Mora",
+    "email": "adiinteractive@gmail.com"
+  },
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-haxe": "latest"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-haxe": "^0.1.12",
+    "grunt-shell": "^1.1.1"
+  }
+}

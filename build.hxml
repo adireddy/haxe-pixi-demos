@@ -3,8 +3,8 @@
 -cp src
 
 #this class wil be used as entry point for your app.
-#-main pixihx.demos.basics.Main
--main pixihx.demos.spritesheet.Main
+-main pixihx.demos.basics.Main
+#-main pixihx.demos.spritesheet.Main
 #-main pixihx.demos.movieclip.Main
 #-main pixihx.demos.snake.Main
 #-main pixihx.demos.rendertexture.Main

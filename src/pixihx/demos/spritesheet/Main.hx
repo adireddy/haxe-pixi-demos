@@ -1,5 +1,6 @@
 package pixihx.demos.spritesheet;
 
+import pixi.renderers.webgl.WebGLRenderer;
 import pixi.display.Sprite;
 import pixi.display.Stage;
 import pixi.utils.Detector;
@@ -11,7 +12,7 @@ class Main {
 
     var _loader:AssetLoader;
     var _alienContainer:DisplayObjectContainer;
-    var _renderer:Dynamic;
+    var _renderer:WebGLRenderer;
     var _stage:Stage;
 
     var _count:Float;
